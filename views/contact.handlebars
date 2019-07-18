@@ -1,0 +1,44 @@
+<style>
+    .btn-primary {
+        border-color: transparent;
+    }
+
+    .navbar {
+        padding: 0%;
+    }
+</style>
+<script>
+    function confirm() {
+        Alert("Thanks for sending your message. We will get back to you soon!");
+    };
+</script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="font-weight: bold;">Let's Connect 🤝</h1>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="name" style="font-weight:bold">Name<span style=color:red>*</span></label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required minlength="2">
+                </div>
+                <div class="form-group">
+                    <label for="email" style="font-weight:bold">Email<span style=color:red>*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" style="font-weight:bold">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                        placeholder="Type message here..." maxlength="1000"></textarea>
+                    <br>
+                    <div class="form-group">
+
+                        <button type="submit" onclick="confirm()" class="btn btn-primary"
+                            style="background-color:#4aaaa5" style="border:none;" border-color="transparent"
+                            style="font-weight:bold">Submit</button>
+                    </div>
+                </div>
+        </div>
+        </form>
