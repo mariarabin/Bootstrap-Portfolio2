@@ -15,19 +15,14 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname+'/public'));
 //app.use('/static', express.static('public'));
 
-// Data
-var lunches = [
-    {
-        lunch: "Beet & Goat Cheese Salad with minestrone soup."
-    }, {
-        lunch: "Pizza, two double veggie burgers, fries with a Big Gulp"
-    }
-];
-
 // Routes
+app.get("/", function (req, res) {
+    res.render("about");
+});
 app.get("/about", function (req, res) {
     res.render("about");
 });
+
 
 app.get("/portfolio", function (req, res) {
     res.render("portfolio")
