@@ -12,6 +12,8 @@ var PORT = process.env.PORT || 8082;
 // Set Handlebars as the default templating engine.
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+app.use(express.static(__dirname+'/public'));
+//app.use('/static', express.static('public'));
 
 // Data
 var lunches = [
@@ -23,8 +25,8 @@ var lunches = [
 ];
 
 // Routes
-app.get("/aboutMe", function (req, res) {
-    res.render("index", lunches[0]);
+app.get("/about", function (req, res) {
+    res.render("about", lunches[0]);
 });
 
 app.get("/portfolio", function (req, res) {
