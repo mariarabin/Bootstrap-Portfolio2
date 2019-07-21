@@ -37,3 +37,9 @@ ul{
 #customTemplateName {
 margin-bottom: 0px;
 }
+
+
+#nav_bar .active {
+    color:            #F8F8F8;
+    background-color: #4f81bd;
+}
