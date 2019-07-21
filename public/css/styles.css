@@ -1,5 +1,5 @@
 html {background-color: white};
-body {background-color: bisque};
+
 
 /* global styles  */
 a{
@@ -55,4 +55,6 @@ margin-bottom: 0px;
   color: white;
   text-align: center;
 }
+
+body {background-color: bisque};
 

@@ -26,18 +26,15 @@ var lunches = [
 
 // Routes
 app.get("/about", function (req, res) {
-    res.render("about", lunches[0]);
+    res.render("about");
 });
 
 app.get("/portfolio", function (req, res) {
-    res.render("portfolio", lunches[1]);
+    res.render("portfolio")
 });
 
 app.get("/contact", function (req, res) {
-    res.render("contact", {
-        foods: lunches,
-        eater: "david"
-    });
+    res.render("contact");
 });
 
 // Start our server so that it can begin listening to client requests.

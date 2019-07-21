@@ -4,7 +4,7 @@
             <h1 style="font-weight: bold;">Let's Connect 🤝</h1>
             <hr>
             <form>
-                <div class="form-group">
+                <div class="form-group" form onsubmit="myFunction()">
                     <label for="name" style="font-weight:bold">Name<span style=color:red>*</span></label>
                     <input type="text" class="form-control" id="name" placeholder="John Doe" required minlength="2">
                 </div>
@@ -17,17 +17,9 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
                         placeholder="Type message here..." maxlength="1000"></textarea>
                     <br>
+                    <button input type="submit">Submit</button>
                     <div class="form-group">
-
-                        <button onclick="myFunction()">Click me</button>
                     </div>
                 </div>
         </div>
         </form>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
-
