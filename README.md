@@ -1,2 +1,4 @@
 # Bootstrap-Portfolio2
-using a node server
+- Rebuild the Basic Portfolio using a node server and handlebars
+- Beautify and clean up the page
+- Update the Portfolio links with the new homeworks and Project 2
